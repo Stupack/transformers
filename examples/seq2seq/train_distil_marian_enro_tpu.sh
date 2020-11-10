@@ -1,5 +1,5 @@
 export WANDB_PROJECT=distil-marian
-export BS=64
+export BS=2
 export m=sshleifer/student_marian_en_ro_6_3
 export MAX_LEN=128
 export TPU_NUM_CORES=8

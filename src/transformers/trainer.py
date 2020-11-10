@@ -1123,7 +1123,7 @@ class Trainer:
             with amp.scale_loss(loss, self.optimizer) as scaled_loss:
                 scaled_loss.backward()
         else:
-            loss.backward()
+            loss.backward(create_graph = True)
 
         return loss.detach()
 
